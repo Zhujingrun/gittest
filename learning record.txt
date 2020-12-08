@@ -22,3 +22,10 @@ git log .   ;查看本目录的日志
 9.git reset --hard  6位版本号  ；恢复到对应的提交状态，版本回归
 
 10.ssh-keygen -t rsa -C "备注"  ；在本地生成一个ssh公钥和私钥
+
+11.git fetch  ; 检查服务器中文件是否有更新，并拉去到本地
+git merge <别名>/<分支名>  ; 把修改了的代码和本地的合并
+git diff  ; 检查是否有冲突？
+
+12.git branch  ;查看分支状态（有多少分支以及目前在什么分支）
+git checkout <branch_name>  ;切换到对应的分支
