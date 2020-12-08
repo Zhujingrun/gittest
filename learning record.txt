@@ -1,0 +1,24 @@
+1.git init 对文件夹初始化，创建.git文件，作为版本库
+
+2.git config --global user.name username
+git config --global user.email 1972834707@qq.com
+把本地仓库和对应的用户绑定起来
+
+3.git status    ;查看现在工作区、版本库的状态（是否有文件修改/需要备份）
+
+4.git add <file_name>   ；添加对应的文件到暂存区中
+git add .    ；添加当前文件夹里面的所有文件到暂存区中
+
+5.git commit -m "注释"   ; 暂存区中的文件提交到版本库当中
+
+6.git remote add <别名> "网址"   ; 为对应网址创建别名
+
+7.git push -u origin master ; 匹配该网址对仓库，并把master分支提交到服务器
+
+8.git log   ; 查询提交日志
+git log <file_name>  ； 对应文件的提交日志
+git log .   ;查看本目录的日志
+
+9.git reset --hard  6位版本号  ；恢复到对应的提交状态，版本回归
+
+10.ssh-keygen -t rsa -C "备注"  ；在本地生成一个ssh公钥和私钥
